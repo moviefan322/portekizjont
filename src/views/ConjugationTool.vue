@@ -132,6 +132,11 @@ onMounted(() => {
   padding: 2em;
 }
 
+.container h1, h2  {
+  text-align: center;
+  color: white;
+}
+
 .conjugation-input {
   display: flex;
   flex-direction: row;

@@ -156,7 +156,6 @@ onMounted(() => {
           {{ setName }}
         </option>
       </select>
-      <div class="button-container"><button class="okButton">Ok</button></div>
     </div>
     <div v-else>
       <div class="card-counter">{{ currentVerbIndex + 1 }} / {{ currentSet.length }}</div>
@@ -233,12 +232,7 @@ onMounted(() => {
   min-height: 200px;
   margin-bottom: 2rem;
   cursor: pointer;
-  transition: transform 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.flashcard:hover {
-  transform: translateY(-2px);
 }
 
 .card-content {
@@ -329,19 +323,6 @@ onMounted(() => {
 .verb-set-select:focus {
   outline: none;
   border-color: #007bff;
-}
-
-.okButton {
-  margin-top: 1rem;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  justify-self: flex-end;
-}
-
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .correct-btn {
